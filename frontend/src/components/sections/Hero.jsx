@@ -4,6 +4,7 @@ import { Card, CardContent } from "../ui/Card.jsx";
 import { Button } from "../ui/Button.jsx";
 import { Code, Lightbulb, Bug, Rocket } from "lucide-react";
 import AnimatedSection from "../ui/AnimatedSection";
+import profileImg from "../../assets/cami_perfil.png";
 
 export default function Hero() {
   return (
@@ -24,11 +25,8 @@ export default function Hero() {
             Soy Camila Sarmiento, desarrolladora Frontend especializada en React.
             Transformo problemas reales en soluciones claras, eficientes y centradas en el usuario.
           </p>
-          <img
-            src="/src/assets/cami_perfil.png"
-            alt="Camila Sarmiento"
-            className="w-48 h-48 rounded-full object-cover shadow-lg"
-          />
+          <img src={profileImg} alt="Camila" className="w-48 h-48 rounded-full object-cover shadow-lg"/>
+        
         </div>
         {/* Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
